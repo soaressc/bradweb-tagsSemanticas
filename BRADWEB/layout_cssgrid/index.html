@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Uso das tags semânticas <article> e <section>
+  </title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Barra de navegação, busca e o cabeçalho principal -->
+    <header>
+      <h1>Empresa A</h1>
+      <!-- Navegação global, que leva para outras páginas do site -->
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/about">Sobre</a></li>
+          <li><a href="/contact">Contato</a></li>
+        </ul>
+      </nav>
+      <form target="_self">
+        <input name="q" type="search" />
+        <input type="submit" />
+      </form>
+    </header>
+
+    <!-- conteúdo principal da página -->
+    <main>
+      <!-- Uma nova seção (grupo) de novas históritas -->
+      <section>
+        <!-- hgroup é usado para agregas mais de um cabeçalho -->
+        <hgroup>
+          <h1>Histórias novas</h1>
+          <h2>Veja suas principais histórias nesta seção</h2>
+          <h2>Escrito por: Alguém</h2>
+        </hgroup>
+       
+        <!-- Um nova seção (grupo) de notícias -->
+        <section>
+          <p>Notícias</p>
+          <!-- Cada article é um notícia individual -->
+          <article id="noticia1">
+            Notícia 1
+            <!-- Conteúdo de imagem do artigo -->
+            <figure>
+              <img
+                src="https://i0.wp.com/www.historiadasartes.com/wp-content/uploads/2017/04/m_abaporu-tarsila-do-amaral.jpg"
+                alt="Abaporu" />
+              <figcaption>Legenda da Figura 1</figcaption>
+            </figure>
+          </article>
+          <article id="noticia2">Notícia 2</article>
+          <article id="noticia3">Notícia 3</article>
+        </section>
+        <!-- Um nova seção (grupo) de histórias esportes -->
+        <section>
+          <p>Esportes</p>
+          <!-- Cada article é uma notícia individual -->
+          <article>História 1</article>
+          <article>História 2</article>
+          <article>História 3</article>
+        </section>
+      </section>       
+    </main>
+    <!-- Conteúdo que fica ao lado do conteúdo principal -->
+    <aside>
+      <nav>
+        <ul>
+          <!-- com # no href, a página rola até a seção indicada  -->
+          <li><a href="#noticia1">Ir para Notícia 1</a></li>
+          <li><a href="#noticia2">Ir para Notícia 2</a></li>
+          <li><a href="#noticia3">Ir para Notícia 3</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Informações da empresa no fim da página -->
+    <footer>
+      <div class="parte1"><p>&copy;Empresa A<p></div>
+      <div class="parte2"><p>Endereço da empresa</p></div>
+      <div class="parte3"><p>Redes sociais da empresa A</p></div>
+    </footer>
+  </div>
+</body>
+
+</html>
